@@ -1,0 +1,522 @@
+@charset "UTF-8";
+a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: #666;
+}
+
+ul, li, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+#banner {
+  width: 1900px;
+  height: 570px;
+  margin: 0 auto;
+}
+#banner iframe {
+  width: 1900px;
+  height: 570px;
+}
+
+/* 新品推荐部分  */
+#new_products {
+  width: 100%;
+  /* 新品推荐部分标题 */
+  /* 新品推荐商品部分 */
+}
+#new_products .command-title {
+  width: 100%;
+  margin: 66px 0 30px 0;
+}
+#new_products .command-title .title {
+  font-size: 42px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+#new_products .command-title .tabs {
+  margin: 25px auto 40px;
+  text-align: center;
+}
+#new_products .command-title .tabs a {
+  color: #333;
+  padding: 0 10px;
+  font-size: 16px;
+}
+#new_products .command-title .tabs a .active {
+  text-decoration: underline;
+}
+#new_products .new_products_shop {
+  width: 990px;
+  height: 451px;
+  margin: 0 auto;
+  position: relative;
+}
+#new_products .new_products_shop .news_wrap {
+  width: 990px;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+}
+#new_products .new_products_shop .news_wrap .shop_wrap {
+  width: 500%;
+  position: absolute;
+}
+#new_products .new_products_shop .news_wrap .shop_wrap li {
+  width: 242.5px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+}
+#new_products .new_products_shop .news_wrap .shop_wrap li a img {
+  width: 210px;
+}
+#new_products .new_products_shop .news_wrap .shop_wrap li .pirce_news {
+  font-size: 18px;
+}
+#new_products .new_products_shop .news_wrap .shop_wrap li:hover {
+  background-color: #ccc;
+}
+#new_products .new_products_shop .news_wrap .shop_wrap .img_basto {
+  width: 54px;
+  height: 24px;
+  margin: 20px auto;
+}
+#new_products .new_products_shop .news_wrap .shop_wrap .title {
+  margin: 20px auto;
+}
+#new_products .new_products_shop .news_wrap .shop_wrap .pirce_news {
+  font-size: 16px;
+}
+#new_products .new_products_shop .news_wrap1 {
+  width: 990px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+#new_products .new_products_shop .news_wrap1 .shop_wrap {
+  width: 500%;
+  overflow: hidden;
+  position: absolute;
+}
+#new_products .new_products_shop .news_wrap1 .shop_wrap li {
+  width: 247.5px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+}
+#new_products .new_products_shop .news_wrap1 .shop_wrap li a img {
+  width: 210px;
+}
+#new_products .new_products_shop .news_wrap1 .shop_wrap li .pirce_news {
+  font-size: 18px;
+}
+#new_products .new_products_shop .news_wrap1 .shop_wrap li:hover {
+  background-color: #ccc;
+}
+#new_products .new_products_shop .news_wrap1 .shop_wrap .img_basto {
+  width: 54px;
+  height: 24px;
+  margin: 20px auto;
+}
+#new_products .new_products_shop .news_wrap1 .shop_wrap .title {
+  margin: 20px auto;
+}
+#new_products .new_products_shop .news_wrap1 .shop_wrap .pirce_news {
+  font-size: 16px;
+}
+#new_products .new_products_shop .shop_left_button {
+  font-size: 40px;
+  color: gray;
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  margin-top: -50px;
+  cursor: pointer;
+}
+#new_products .new_products_shop span:hover {
+  transform: scale(1.5);
+}
+#new_products .new_products_shop .shop_right_button {
+  font-size: 40px;
+  color: gray;
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  margin-top: -50px;
+  cursor: pointer;
+}
+
+/* 今天主推大牌部分*/
+#today_main {
+  width: 990px;
+  margin: 0 auto;
+  /* 今天主推大牌标题 */
+}
+#today_main .main-title {
+  width: 990px;
+  margin: 66px 0 30px 0;
+}
+#today_main .main-title .title {
+  font-size: 42px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+#today_main .main-title .tabs {
+  margin: 25px auto 40px;
+  text-align: center;
+}
+#today_main .main-title .tabs a {
+  color: #333;
+  padding: 0 10px;
+  font-size: 16px;
+}
+#today_main .main-title .tabs :hover {
+  text-decoration: underline;
+}
+#today_main .main_shop {
+  width: 100%;
+  position: relative;
+  /* 显示商品主图 */
+  /* 品牌图标 */
+}
+#today_main .main_shop .main_img {
+  width: 990px;
+  height: 452px;
+  margin: 0 auto;
+  position: relative;
+}
+#today_main .main_shop .main_img .item1 {
+  float: left;
+  position: relative;
+  left: 0;
+}
+#today_main .main_shop .main_img .item1 span {
+  width: 315px;
+  height: 402px;
+  display: inline-block;
+  background-color: black;
+  background-image: url(../img/blackS-millies.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#today_main .main_shop .main_img .item1 :hover {
+  opacity: 0.5;
+}
+#today_main .main_shop .main_img .item {
+  margin: 0 20px;
+  float: left;
+  position: relative;
+}
+#today_main .main_shop .main_img .item span {
+  width: 315px;
+  height: 402px;
+  display: inline-block;
+  background-color: black;
+  background-image: url(../img/whiteL-senda.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#today_main .main_shop .main_img .item :hover {
+  opacity: 0.5;
+}
+#today_main .main_shop .main_img .item2 {
+  float: left;
+  position: relative;
+}
+#today_main .main_shop .main_img .item2 span {
+  width: 315px;
+  height: 402px;
+  display: inline-block;
+  background-color: black;
+  background-image: url(../img/whiteL-tata.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#today_main .main_shop .main_img .item2 :hover {
+  opacity: 0.5;
+}
+#today_main .main_shop .main_img1 {
+  width: 990px;
+  height: 452px;
+  margin: 0 auto;
+  display: none;
+}
+#today_main .main_shop .main_img1 .item1 {
+  float: left;
+  position: relative;
+}
+#today_main .main_shop .main_img1 .item1 span {
+  width: 315px;
+  height: 402px;
+  display: inline-block;
+  background-color: black;
+  background-image: url(../img/whiteL-converse.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#today_main .main_shop .main_img1 .item1 :hover {
+  opacity: 0.5;
+}
+#today_main .main_shop .main_img1 .item {
+  margin: 0 20px;
+  float: left;
+  position: relative;
+}
+#today_main .main_shop .main_img1 .item span {
+  width: 315px;
+  height: 402px;
+  display: inline-block;
+  background-color: black;
+  background-image: url(../img/whiteL-asics.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#today_main .main_shop .main_img1 .item :hover {
+  opacity: 0.5;
+}
+#today_main .main_shop .main_img1 .item2 {
+  float: left;
+  position: relative;
+}
+#today_main .main_shop .main_img1 .item2 span {
+  width: 315px;
+  height: 402px;
+  display: inline-block;
+  background-color: black;
+  background-image: url(../img/whiteL-reebok.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#today_main .main_shop .main_img1 .item2 :hover {
+  opacity: 0.5;
+}
+#today_main .main_shop .shop_logo_wrap {
+  width: 990px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+#today_main .main_shop .shop_logo_wrap .main_shop_logo {
+  width: 110%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+#today_main .main_shop .shop_logo_wrap .main_shop_logo li {
+  width: 10%;
+  padding: 10px;
+  box-sizing: border-box;
+  float: left;
+}
+#today_main .main_shop .shop_logo_wrap img {
+  width: 60px;
+}
+#today_main .main_shop .shop_logo_wrap .prev {
+  font-size: 32px;
+  color: gray;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  margin-top: -25px;
+}
+#today_main .main_shop .shop_logo_wrap span:hover {
+  transform: skewY(10deg) scaleY(1.5);
+  cursor: pointer;
+}
+#today_main .main_shop .shop_logo_wrap .last {
+  font-size: 32px;
+  color: gray;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  margin-top: -25px;
+}
+
+/* 品牌潮流资讯 */
+#Brand_Trend_Information {
+  width: 990px;
+  height: 1563px;
+  margin: 0 auto;
+  clear: both;
+}
+#Brand_Trend_Information .icon-title {
+  width: 100%;
+  margin: 66px 0 30px 0;
+}
+#Brand_Trend_Information .icon-title .title {
+  font-size: 42px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+#Brand_Trend_Information .icon-title .en-title {
+  margin: 25px auto 40px;
+  font-size: 30px;
+  color: gray;
+  text-align: center;
+}
+#Brand_Trend_Information .main_video {
+  width: 990px;
+  height: 470px;
+  margin: 0 auto;
+  position: relative;
+}
+#Brand_Trend_Information .main_video video {
+  width: 320px;
+  height: 470px;
+  background-color: #000;
+  position: absolute;
+}
+#Brand_Trend_Information .main_video .center_video {
+  position: absolute;
+  top: 0;
+  left: 335px;
+}
+#Brand_Trend_Information .main_video .left_img {
+  width: 320px;
+  height: 470px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#Brand_Trend_Information .main_video .center_img {
+  width: 320px;
+  height: 470px;
+  margin: 0 10px;
+  position: absolute;
+  top: 0;
+  left: 325px;
+  z-index: 1;
+}
+#Brand_Trend_Information .main_video .right_img {
+  width: 320px;
+  height: 470px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#Brand_Trend_Information .main_shoe {
+  width: 990px;
+}
+#Brand_Trend_Information .main_shoe a {
+  position: relative;
+}
+#Brand_Trend_Information .main_shoe a img {
+  width: 231px;
+  margin: 50px 14px 110px 0;
+  float: left;
+}
+#Brand_Trend_Information .main_shoe a .last_img {
+  margin-right: 0;
+}
+#Brand_Trend_Information .main_shoe a span {
+  width: 231px;
+  height: 250px;
+  line-height: 250px;
+  text-align: center;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0);
+}
+#Brand_Trend_Information .main_shoe a :hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  color: white;
+}
+#Brand_Trend_Information .main_big_video {
+  width: 990px;
+  height: 500px;
+  position: relative;
+}
+#Brand_Trend_Information .main_big_video img {
+  width: 990px;
+  height: 500px;
+}
+#Brand_Trend_Information .main_big_video video {
+  width: 990px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+#img8 {
+  clear: both;
+  width: 100%;
+  height: 528px;
+}
+#img8 a {
+  display: inline;
+}
+#img8 .img8-cont {
+  width: 990px;
+  height: 528px;
+  margin: 0 auto;
+  background-image: url(../img/you_gou_pcfen_lei_ru_kou_.jpg);
+  background-repeat: no-repeat;
+  background-position: center 5px;
+}
+#img8 .img8-cont .box {
+  float: left;
+  width: 247.5px;
+  height: 200px;
+  background-color: #fff;
+  border: none;
+  opacity: 0.1;
+}
+#img8 .img8-cont :hover {
+  opacity: 0.3;
+}

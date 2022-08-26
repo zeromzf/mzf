@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="D:\phpstudy_pro\WWW\yougou\src\lib\jquery-1.12.4.js"></script>
+	<style>
+		#banner {
+			width: 100%;
+			height: 550px;
+			margin: 0 auto;
+			overflow: hidden;
+			position: relative;
+			/* 图片轮播条  */
+		}
+
+		#banner .img_box {
+			width: 1920px;
+			margin: 0 auto;
+		}
+
+		#banner .img_box a {
+			display: block;
+			margin: 0 auto;
+			height: 550px;
+			position: relative;
+		}
+
+		#banner .img_box img {
+			height: 550px;
+			position: absolute;
+			top: 0;
+		}
+
+		#banner .wrap .trgBox {
+			position: absolute;
+			right: 8%;
+			top: 530px;
+		}
+
+		#banner .wrap .trgBox span {
+			line-height: 5px;
+			font-weight: bold;
+			width: 20px;
+			height: 6px;
+			background: #000;
+			filter: alpha(opacity=70);
+			opacity: 0.7;
+			cursor: pointer;
+			float: left;
+			margin-left: 6px;
+		}
+		#banner .wrap .trgBox .show {
+			background:red;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="banner">
+		<div class="img_box">
+			<a href="#">
+				<img src="img/banner1.jpg">
+				<img src="img/banner2.jpg">
+			</a>
+
+		</div>
+		<!-- <div class="img_box">
+			
+		</div> -->
+		<!-- 图片轮播条 添加自动轮播事件-->
+		<div class="wrap">
+			<div class="trgBox">
+				<span class="show"></span>
+				<span class="hover"></span>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function lBt(){
+		//图片下标
+		var i = 0;
+		// 计时器
+		timer = setInterval(autoPlay, 2000);
+		// 函数
+		function autoPlay() {
+			// 获取元素\
+			var o_bann = document.getElementById('banner');
+			var item = o_bann.firstElementChild.firstElementChild.children;
+			var show = o_bann.lastElementChild.firstElementChild.children;
+			if (i == 1) {
+				i = 0;
+				item[1].style.display = 'none';
+				item[0].style.display = 'block';
+				show[0].style.background = "#000";
+				show[1].style.background = "red";
+			} else {
+				i += 1;
+				item[0].style.display = 'none';
+				item[1].style.display = 'block';
+				show[0].style.background = "red";
+				show[1].style.background = "#000";
+			}
+		}
+		};
+		lBt();
+	</script>
+</body>
+
+</html>
