@@ -1,32 +1,43 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+  <div>
+    <router-view></router-view>
+      <van-tabbar
+        v-model="active"
+        active-color="rgb(255, 208, 0)"
+        inactive-color="rgb(175,175,175)"
+        route
+      >
+        <van-tabbar-item icon="home-o" to="/pet">买只宠物</van-tabbar-item>
+        <van-tabbar-item icon="shop-collect-o" to="/merchants">商家</van-tabbar-item>
+        <van-tabbar-item icon="chat-o" to="/news">消息</van-tabbar-item>
+        <van-tabbar-item icon="user-o" to="/ucenter">我的</van-tabbar-item>
+      </van-tabbar>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import Vue from "vue"
+import {Tabbar,TabbarItem} from "vant"
+Vue.use(Tabbar)
+Vue.use(TabbarItem)
+export default {
+  data() {
+    return {
+      active: 0,
+    };
+  },
+};
+</script>
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+<style lang="scss" scoped>
+.van-tabbar{
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 </style>
